@@ -1,5 +1,5 @@
-import React from 'react'
-import { Square } from 'components/Square'
+import React from 'react';
+import { Square } from 'components/Square';
 import { useSelector } from 'react-redux';
 
 export const Board = () => {
@@ -8,7 +8,10 @@ export const Board = () => {
   return (
     <div className="board">
       {squares.map((value, index) => (
-        <Square key={index} value={value} index={index} />
+        <Square
+          key={index}
+          value={value}
+          index={index} />
       ))}
     </div>
   )
